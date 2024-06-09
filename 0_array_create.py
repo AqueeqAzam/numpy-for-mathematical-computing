@@ -8,14 +8,30 @@ arr
 # check array types
 type(arr)
 
-# creating multidimension array
-arr = np.array([[1, 4, 85, 45], [1, 14, 65, 45], [1, 4, 65, 5]])
-arr
+# zeros array (fill array with zeros)
+arr_zero = np.zeros(4)
+arr_zero
 
-# slicing
-arr = np.array([23, 56, 34, 22])
-arr[0:3]
-arr[2:3]
+# with multi dimension
+arr_zero = np.zeros((3,4))
+arr_zero
 
-arr = np.array([[1, 4, 85, 45], [1, 14, 65, 45], [1, 4, 65, 5]])
-arr[1, 2:4]
+# ones array (fill array with zeros)
+arr_ones = np.ones(4)
+arr_ones
+
+# empty array
+arr_em = np.empty(4)
+arr_em
+
+# array range
+arr_rn = np.arange(4)
+arr_rn
+
+# array dimgonal
+arr_dig = np.eye(3, 5)
+arr_dig
+
+# array linespace
+arr_lp = np.linspace(0, 20, num=5)
+arr_lp
