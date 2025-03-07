@@ -88,6 +88,7 @@ print("📉 Standard Deviation:", np.std(data))
 # 📌 11. Filtering Elements with Conditions
 # Definition: Selects elements based on conditions.
 # Usage: Used in data filtering, AI feature selection.
+data = np.array([11, 25, 3, 45, 5])
 filtered = data[data > 5]
 print("🔍 Filtered (Greater than 5):", filtered)
 
@@ -152,6 +153,7 @@ print("📏 Linearly Spaced Values:", lin_space)
 # 📌 19. Boolean Masking in NumPy Arrays
 # Definition: Uses Boolean conditions to filter arrays.
 # Usage: Used in anomaly detection, filtering noisy data.
+data = np.array([1, 2, 3, 4, 5, 6])
 mask = data % 2 == 0  # Select even numbers
 filtered_data = data[mask]
 print("🧐 Even Numbers:", filtered_data)
@@ -163,3 +165,29 @@ print("🧐 Even Numbers:", filtered_data)
 multi_arr = np.array([[1, 2, 3], [4, 5, 6]])
 flattened = multi_arr.flatten()
 print("📉 Flattened Array:", flattened)
+
+# 21 individual elements of an array using their positions (indices).
+
+# Key Features: Zero-based indexing: The first element is at index 0.
+# 1D array
+arr_1d = np.array([10, 20, 30, 40, 50])
+print(arr_1d[0])    # 10 (first element)
+print(arr_1d[-1])   # 50 (last element)
+
+# 2D array
+arr_2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(arr_2d[1, 2])  # 6 (second row, third column)
+
+# 22. Slicing
+# Defination: Extracting subarrays by specifying start, stop, and step values.
+
+# Syntax: array[start:stop:step]
+
+# 1D slicing
+print(arr_1d[1:4])    # [20, 30, 40] (indices 1 to 3)
+print(arr_1d[::2])    # [10, 30, 50] (every second element)
+
+# 2D slicing
+print(arr_2d[:2, 1:])  # [[2, 3], [5, 6]] (first two rows, columns 1 onward)
+print(arr_2d[:, 0])    # [1, 4, 7] (first column of all rows)
+
