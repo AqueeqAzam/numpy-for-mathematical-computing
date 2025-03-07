@@ -51,9 +51,11 @@ print("🔄 Reshaped Array:\n", reshaped_arr)
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 sum_arr = a + b
+print(np.sum([a, b]))
 product_arr = a * b
 print("➕ Sum:", sum_arr)
 print("✖️ Product:", product_arr)
+
 
 
 # 📌 8. Matrix Multiplication (Dot Product)
